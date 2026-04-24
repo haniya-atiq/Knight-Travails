@@ -1,32 +1,41 @@
-# ♞ Knight Travails GUI
+# Knight's Travails
 
-<div align="center">
+A Java program that solves the classic Knight's Travails problem by finding the shortest path for a knight piece between two squares on a chessboard using **BFS (Breadth First Search)** algorithm with a **Java Swing GUI**.
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Swing](https://img.shields.io/badge/Java%20Swing-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
+---
 
-*A visual implementation of the Knight's shortest path problem using BFS algorithm*
+## 🎯 Objectives
 
-[Features](#-features) • [Demo](#-demo) • [Installation](#-installation) • [Usage](#-usage) • [Algorithm](#-algorithm) • [Project Structure](#-project-structure)
+- Understand BFS and DFS algorithms
+- Model chessboard as a graph
+- Implement shortest path algorithm
+- Develop GUI-based Java application
 
-</div>
+---
 
-## 📋 Overview
+## 🧩 Problem Description
 
-Knight Travails GUI is a Java Swing application that solves the classic chess problem: finding the shortest path for a knight from a starting square to an ending square on an 8×8 chessboard. The application provides an interactive graphical interface where users can select start and end positions, visualize the computed path, and see each move numbered.
+The chessboard is an **8×8 grid** where each square represents a node. Knight's legal moves represent edges. The task is to find the shortest sequence of moves from a given start position to a destination without leaving the board.
 
-## ✨ Features
+---
 
-- 🎨 **Interactive Chessboard**: Visual 8×8 board with alternating colors
-- 🟢🔴 **Easy Selection**: Click to set start (green) and end (red) positions
-- 🧭 **Path Visualization**: Displays shortest path with numbered steps
-- ⚡ **BFS Algorithm**: Efficient shortest path calculation using Breadth-First Search
-- 🔄 **Reset Functionality**: Clear board and start fresh
-- 🎯 **Input Validation**: Prevents errors with proper user guidance
+## 🛠️ Tools & Technologies
 
-## 🎮 Demo
+| Tool | Purpose |
+|------|---------|
+| Java | Programming language |
+| Java Swing | GUI framework |
+| NetBeans / IntelliJ | IDE |
 
-![Application Screenshot](images/screenshot.png)
+---
 
-*Example: Knight's path from (0,0) to (7,7)*
+## 🔍 Algorithm Used
+
+### Breadth First Search (BFS)
+
+BFS explores nodes level by level and guarantees the shortest path in unweighted graphs. It uses a **queue** data structure.
+
+**Purpose of BFS**
+- Shortest path guarantee
+- Level-by-level exploration
+- Efficient for unweighted graphs
